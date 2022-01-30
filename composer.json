@@ -1,5 +1,5 @@
 {
-	"name": "kdyby/wkhtmltopdf",
+	"name": "ajaxovic/wkhtmltopdf",
 	"type": "library",
 	"description": "Wkhtmltopdf cli wrapper for Nette Framework",
 	"keywords": ["nette", "pdf", "wkhtmltopdf"],
