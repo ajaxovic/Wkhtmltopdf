@@ -232,6 +232,7 @@ class Document implements Nette\Application\IResponse
 			'-q' => null,
 			'--disable-smart-shrinking' => null,
 			'--disable-internal-links' => null,
+			'--enable-local-file-access' => null,
 			'-T' => $this->margin[0],
 			'-R' => $this->margin[1],
 			'-B' => $this->margin[2],
