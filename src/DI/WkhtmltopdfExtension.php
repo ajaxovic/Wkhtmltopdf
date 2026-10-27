@@ -45,7 +45,7 @@ class WkhtmltopdfExtension extends Nette\DI\CompilerExtension
 	}
 
 
-	public static function register(Nette\Configurator $configurator): void
+	public static function register(Nette\Bootstrap\Configurator $configurator): void
 	{
 		$configurator->onCompile[] = function ($config, Nette\DI\Compiler $compiler) {
 			$compiler->addExtension('wkhtmltopdf', new WkhtmltopdfExtension());

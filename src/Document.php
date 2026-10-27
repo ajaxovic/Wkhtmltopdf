@@ -158,7 +158,7 @@ class Document implements Nette\Application\IResponse
 		Nette\Utils\FileSystem::createDir($this->tmpDir);
 
 		do {
-			$file = $this->tmpDir . '/' . md5($content . '.' . lcg_value()) . '.html';
+			$file = $this->tmpDir . '/' . md5($content . '.' .bin2hex(random_bytes(16))) . '.html';
 		} while (file_exists($file));
 
 		file_put_contents($file, $content);
